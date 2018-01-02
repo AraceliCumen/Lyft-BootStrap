@@ -1,14 +1,14 @@
 $(document).ready(function() {
   // para cambiar las banderas
   function bandera(element) {
-    var srcImageFlags = $('#image-flags').attr('src');
-    var altImageFlags = $('#image-flags').attr('alt');
-    var thisImageFlags = $(element).attr('src');
+    var srcFlags = $('#image-flags').attr('src');
+    var altFlags = $('#image-flags').attr('alt');
+    var thisFlags = $(element).attr('src');
     var thisAltImageFlags = $(element).attr('alt');
-    $('#image-flags').attr('src', thisImageFlags);
+    $('#image-flags').attr('src', thisFlags);
     $('#image-flags').attr('alt', thisAltImageFlags);
-    $(element).attr('src', srcImageFlags);
-    $(element).attr('alt', altImageFlags);
+    $(element).attr('src', srcFlags);
+    $(element).attr('alt', altFlags);
     if (thisAltImageFlags === 'mexico') {
       $('#postal').text('52');
       localStorage.codPostal = '52';
@@ -54,13 +54,14 @@ $(document).ready(function() {
   
   // guardamos en el local storage después del evento click cuando se activa el evento click se creara el codigo y se guardara en localStorage para validarlo en la otra vista
   $('#button-next').click(function() {
-    var numRandomNew = (Math.floor((Math.random() * 10))).toString();
-    var numRandomNew1 = (Math.floor((Math.random() * 10))).toString();
-    var numRandomNew2 = (Math.floor((Math.random() * 10))).toString();
-    alert('LAB - ' + numRandomNew + numRandomNew1 + numRandomNew2);
-    localStorage.numRam = numRandomNew;
-    localStorage.numRam1 = numRandomNew1;
-    localStorage.numRam2 = numRandomNew2;
+    // creamos números random
+    var numRandomOne = (Math.floor((Math.random() * 10))).toString();
+    var numRandomTwo = (Math.floor((Math.random() * 10))).toString();
+    var numRandomThree = (Math.floor((Math.random() * 10))).toString();
+    alert('LAB - ' + numRandomNew + numRandomTwo + numRandomThree);
+    localStorage.numRam = numRandomOne;
+    localStorage.numRam1 = numRandomTwo;
+    localStorage.numRam2 = numRandomThree;
     window.location.href = '../views/verify.html';
   });
 });

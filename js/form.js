@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // nos aseguramos que no se ingresen números
+  // nos aseguramos que no se ingresen números en el firstname
   $('#first-name').on('input', function() {
     if ($(this).val().match(/[1-9]/)) {
       alert('No ingrese números');
@@ -7,6 +7,7 @@ $(document).ready(function() {
     } 
   });
 
+  // nos aseguramos que no se ingresen números en el lastname
   $('#last-name').on('input', function() {
     if ($(this).val().match(/[1-9]/)) {
       alert('No ingrese números');
