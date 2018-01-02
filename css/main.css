@@ -89,10 +89,12 @@
 }
 
 .back a{
-  color:#F724AE;
+  color:rgb(56, 53, 55);
   font-size: 45px;
-  font-weight: 900;
-  text-decoration: none;
+  font-weight: 500;
+	border-radius: 50%;
+	border: 2px solid rgb(56, 53, 55);
+	padding-right: 3px;
 }
 
 .inline-block{
@@ -185,7 +187,7 @@
 
 .button-reset{
   outline: none;
-  background-color: rgb(235, 143, 178);
+  background-color: #A08FEB;
   color:#fff;
   position: relative;
   left: 50%;
