@@ -12,10 +12,6 @@
 }
 
 /* FÍN CLASES REUTILIZABLES */
-.img-1{
-  width: 100%;
-}
-
 .container-flex-row {
 	display: flex;
 	justify-content: space-between;
@@ -56,6 +52,10 @@
   background-size: cover;		
 }
 
+.img-logo{
+  width: 100%;
+}
+
 .container-a{
 	display: flex;
   justify-content: space-between;
@@ -73,12 +73,126 @@
 	padding: 2em;
 }
 /* FIN VENTANAS REGISTER */
+
+/* INICIO CLASES LOGIN */
 .btn-success {
 	padding: 0.5em;
 	margin-bottom: 3em;
+	background-color: rgb(240, 14, 153);	
+	border: none;
+}
+/* FIN CLASES LOGIN */
+
+/* INICIO CLASES SIGNUP */
+.img-banderas{
+  width: 40px;
 }
 
+.back a{
+  color:#F724AE;
+  font-size: 45px;
+  font-weight: 900;
+  text-decoration: none;
+}
 
+.inline-block{
+  display: inline-block;
+}
+
+.center{
+  text-align: center;
+}
+
+.margin-right{
+  margin-right: 20px;
+}
+
+.margin-bottom{
+  margin-bottom: 30px;
+}
+
+.input{
+  border:none;
+  border-bottom: 2px solid #72787A  ;
+  font-size: 20px;
+  width: 80%;
+  outline: none;
+}
+
+.span-number{
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.margin-button{
+  margin-top: 150px;
+}
+
+.margin-top{
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.disabled-color{
+  background-color: #CDCDCE;
+  font-weight: 900;
+}
+
+.enabled-color{
+  background-color: #F9498A;
+  font-weight: 900;
+}
+/* FIN CLASES SIGNUP */
+
+/* INICIO CLASES VERIFY*/
+.title{
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.input-cod{
+  width: 20px;
+  font-size: 20px;
+  border:none;
+  border-bottom: 1px solid #F61F63;
+  outline: none;
+}
+
+.button-reset{
+  outline: none;
+  background-color: #A08FEB;
+  color:#fff;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 500;
+}
+/* FIN CLASES VERIFY */
+
+/* INICIO CLASES FORM*/
+.title{
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.input-cod{
+  width: 20px;
+  font-size: 20px;
+  border:none;
+  border-bottom: 1px solid #F61F63;
+  outline: none;
+}
+
+.button-reset{
+  outline: none;
+  background-color: rgb(235, 143, 178);
+  color:#fff;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 500;
+}
+/* FIN CLASES FORM */
 
 .title {
 	padding: 0.5em;
@@ -86,5 +200,5 @@
 }
 
 .signup {
- background: green;
+ background:  rgb(240, 14, 153);	
 }

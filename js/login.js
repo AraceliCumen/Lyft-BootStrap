@@ -30,7 +30,7 @@ $(document).ready(function() {
   $buttonSubmit.on('click', function(event) {
     event.preventDefault();
     if (validateEmail && validatePassword) {
-      alert('Oh my gad!! You are papanuelll Yupi!!');
+      alert('Oh my gad!! You are for Lyft');
       window.location.href = 'close.html';
     } else {
       alert('Oh no, you need register');
